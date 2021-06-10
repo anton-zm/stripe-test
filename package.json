@@ -4,15 +4,15 @@
   "dependencies": {
     "@stripe/react-stripe-js": "^1.0.0",
     "@stripe/stripe-js": "^1.0.0",
+    "concurrently": "4.1.2",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "react-scripts": "^3.4.0",
-    "concurrently": "4.1.2",
-    "express": "^4.17.1",
     "stripe": "^7.1.0"
   },
   "homepage": "http://localhost:3000",
-  
   "scripts": {
     "start": "node server.js"
   },

@@ -1,6 +1,9 @@
 const stripe = require('stripe')('sk_test_51J0RP9GCkX2f6EhoTG0nObEe4frf8SB879cdL3l9HOGrgFbHMwzeNoKzGbJg9eYjW9ie8MvFQMwFsNlJ1bdm9Ior00DlrgdLGK');
 const express = require('express');
+const cors = require('cors');
 const app = express();
+
+app.use(cors());
 app.use(express.static('.'));
 
 const YOUR_DOMAIN = 'http://localhost:3000';
