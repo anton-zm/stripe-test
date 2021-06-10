@@ -5,6 +5,10 @@ app.use(express.static('.'));
 
 const YOUR_DOMAIN = 'http://localhost:3000';
 
+app.get('/test', (req,res) => {
+  res.send('Hello world')
+})
+
 app.post('/create-checkout-session', async (req, res) => {
   const session = await stripe.checkout.sessions.create({
     payment_method_types: ['card'],
